@@ -1,0 +1,29 @@
+@use '../_tokens' as t;
+
+/* LIGHT: xanh - trắng (mặc định) */
+:root {
+  --bg: #{t.$white};
+  --text: #{t.$black};
+
+  --primary: #{t.$blue-500};
+  --primary-hover: #{t.$blue-700};
+  --primary-contrast: #{t.$white};
+
+  --surface: #{t.$gray-100};
+  --surface-border: #e5e7eb;
+
+  --radius-md: #{t.$radius-md};
+}
+
+/* DARK: đỏ - đen */
+html[data-theme='dark'] {
+  --bg: #{t.$black};
+  --text: #{t.$white};
+
+  --primary: #{t.$red-500};
+  --primary-hover: #{t.$red-700};
+  --primary-contrast: #{t.$white};
+
+  --surface: #{t.$gray-800};
+  --surface-border: #374151;
+}
