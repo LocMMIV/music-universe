@@ -1,0 +1,13 @@
+.material-icons,
+.material-icons-outlined,
+.material-icons-round,
+.material-icons-sharp {
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+        color: #1976d2;
+        transform: scale(1.1);
+    }
+}

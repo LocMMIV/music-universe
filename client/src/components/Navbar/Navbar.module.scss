@@ -1,0 +1,38 @@
+.nav {
+  display: grid;
+  grid-template-columns: 240px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--surface-border);
+  position: sticky; top: 0; z-index: 100;
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 800; text-decoration: none; color: var(--text);
+}
+.logoDot { width: 10px; height: 10px; border-radius: 50%; background: var(--primary); }
+
+.search {
+  display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center;
+  input {
+    width: 100%; height: 38px; padding: 0 12px;
+    border: 1px solid var(--surface-border); border-radius: var(--radius-md);
+    background: var(--bg); color: var(--text); outline: none;
+  }
+}
+
+.account { display: inline-flex; align-items: center; gap: 8px; }
+.userBox { display: inline-flex; align-items: center; gap: 8px; }
+.avatar {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--primary); color: var(--primary-contrast); font-weight: 700;
+}
+.info { display: grid; line-height: 1.05; small { opacity:.8; } }
+
+@media (max-width: 768px) {
+  .nav { grid-template-columns: 1fr auto; gap: 8px; }
+  .search { display: none; } /* có thể làm toggle nếu muốn */
+}

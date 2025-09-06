@@ -1,18 +1,1 @@
-.page { padding: 24px; }
-.header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.logos { display: flex; align-items: center; gap: 12px; }
-
-.logo { height: 48px; will-change: filter; transition: filter .2s ease; }
-.logo:hover { filter: drop-shadow(0 0 1rem var(--primary)); }
-.react { animation: react-spin 20s linear infinite; }
-@keyframes react-spin { to { transform: rotate(360deg); } }
-
-.themeSwitch { display: flex; align-items: center; gap: 8px; }
-.themeLabel { opacity: .8; margin-right: 4px; }
-
-.title { margin: 24px 0 12px; }
-
-.buttonRow { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-
-.tip { margin-top: 8px; color: var(--muted); }
-.footerNote { margin-top: 16px; opacity: .8; }
+.app { min-height: 100vh; background: var(--bg); color: var(--text); }
